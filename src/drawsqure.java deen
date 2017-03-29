@@ -1,0 +1,9 @@
+
+public class drawsqure {
+	public static void main(String[] args) {
+		Robot bob=new Robot();
+		bob.penDown();
+		
+	}
+
+}

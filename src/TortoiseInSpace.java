@@ -1,4 +1,4 @@
-package day3;
+
 
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
@@ -16,15 +16,23 @@ public class TortoiseInSpace implements KeyEventDispatcher {
 	/*  Make the Tortoise move around the screen when the arrow keys are pressed... */
 	private void moveTortoise(int keyPressed) {
 		// 0. Print out the keyPressed variable and write down the numbers for each arrow key
-
+System.out.println(keyPressed);
 		// 1. If the up arrow is pressed, move the Tortoise up the screen.
-
+if (keyPressed==38){
+	Tortoise.setAngle(0);
+	Tortoise.move(15);}
 		// 2. If the down arrow is pressed, move the Tortoise down.
-
+if (keyPressed==40){
+	Tortoise.setAngle(180);
+	Tortoise.move(15);}
 		// 3. If the left arrow is pressed, make the tortoise go left. Hint: Make sure to end with the Tortoise facing UP.
-		
+if (keyPressed==37){
+	Tortoise.setAngle(270);
+	Tortoise.move(15);}
 		// 4. If right is pressed, move the Tortoise right.
-		
+if (keyPressed==39){
+	Tortoise.setAngle(90);
+	Tortoise.move(15);}
 		// 5. Then move the Tortoise to RD-2D for a surprise! 
 	}
 
